@@ -2,6 +2,7 @@
     --primary: #0077B6;
     --accent: #00B4D8;
     --secondary-text: #90E0EF;
+    --secondary-background: #a2d2ff;
     --background: #CAF0F8;
     --typeface: #03045E;
 
@@ -49,10 +50,15 @@ header {
     content: "X";
 }
 
+.active::after {
+    content: "⚡";
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
     align-content: center;
+    background-color: var(--secondary-background);
 }
 
 .navigation a {
@@ -62,11 +68,11 @@ header {
     text-decoration: none;
     text-align: center;
     display: none;
+    flex-grow: 1;
 }
 
 .navigation a:hover {
-    background-color: var(--accent);
-    color: var(--background);
+    background-color: var(--primary);
     text-decoration: underline;
     font-weight: 700;
 
@@ -81,9 +87,56 @@ body {
     background-color: var(--background);
     color: var(--typeface);
     line-height: 1.6;
+
 }
 
 main {
     margin: auto;
     max-width: 800px;
+    padding: 15px;
+}
+
+h2 {
+    background-color: var(--accent);
+}
+
+.couses-filters {
+    display: flex;
+    gap: 25px;
+    margin: 15px 10px;
+}
+
+.couses-filters button {
+    background-color: var(--secondary-background);
+    flex: 1;
+    padding: 10px;
+    border-radius: var(--radius);
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 10px;
+
+}
+
+.course-card {
+    flex: 1 1;
+    min-width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: var(--radius);
+
+}
+
+.course-completed {
+    background-color: var(--accent);
+}
+
+.course-completed::after {
+    content: "✅";
 }
