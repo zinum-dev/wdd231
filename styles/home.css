@@ -1,0 +1,89 @@
+:root {
+    --primary: #0077B6;
+    --accent: #00B4D8;
+    --secondary-text: #90E0EF;
+    --background: #CAF0F8;
+    --typeface: #03045E;
+
+    --radius: 10px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    margin: 10px;
+    border-radius: var(--radius);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--nav-color);
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.navigation a {
+    padding: 1rem 1rem;
+    color: var(--typeface);
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    display: none;
+}
+
+.navigation a:hover {
+    background-color: var(--accent);
+    color: var(--background);
+    text-decoration: underline;
+    font-weight: 700;
+
+}
+
+.open a {
+    display: block;
+}
+
+body {
+    font-family: Roboto Mono, monospace;
+    background-color: var(--background);
+    color: var(--typeface);
+    line-height: 1.6;
+}
+
+main {
+    margin: auto;
+    max-width: 800px;
+}

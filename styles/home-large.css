@@ -1,0 +1,22 @@
+@media (min-width: 780px) {
+ 
+    .title img {
+        margin: 10px 30px;
+        border-radius: var(--radius);
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        padding-inline: 1rem;
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+}

@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <meta name="description" content="A Home for WDD231 course">
+    <meta name="author" content="André Muniz">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/home.js" defer></script>
 </head>
+
 <body>
-    Oi
-    <h1>
-        <p></p>
-    </h1>
+    <header>
+        <div class="title">
+            <img src="images/perfil.jpg" alt="Profile picture" height="150">
+            <h1>
+                André F. Muniz
+            </h1>
+        </div>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="project/index.html">Chamber</a>
+            <a href="https://github.com/zinum-dev">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/andre-zinum">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Rio de Janeiro, Brazil</h2>
+            <figure>
+                <img src="images/rio-beach.jpg" alt="Rio de Janeiro beach" width="250">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div>
+                <button>ALL</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div></div>
+        </section>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 💻 André Figueiredo Muniz 💻 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
+
 </html>
