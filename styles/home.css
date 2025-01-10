@@ -117,7 +117,7 @@ ul {
 }
 
 figure {
-    margin: 10px 15px ;
+    margin: 10px 15px;
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ figcaption {
     border-radius: var(--radius);
 }
 
-.credits{
+.credits {
     text-align: center;
 }
 
@@ -163,6 +163,7 @@ figcaption {
     box-sizing: border-box;
     text-align: center;
 
+    color: #FFF;
     background-color: var(--primary);
     padding: 10px;
     border-radius: var(--radius);
@@ -171,15 +172,16 @@ figcaption {
 
 .course-completed {
     background-color: var(--accent);
+    color: var(--typeface);
 }
 
 .course-completed::after {
     content: "✅";
 }
 
-footer{
+footer {
     text-align: center;
     background-color: var(--primary);
     padding: 10px;
-    color: var(--typeface);
+    color: #FFF;
 }
