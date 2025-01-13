@@ -23,6 +23,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
     <script src="scripts/directory.js" defer></script>
 
@@ -31,46 +33,56 @@
 
 <body>
     <header>
-        <div class="title">
+        <img src="images/logo.png" alt="Company logo picture" width="34" height="40">
+        <span>
             <h1>
-                André F. Muniz
+                St. George
             </h1>
-        </div>
+            Chamber of Commerce
+        </span>
         <button type="button" id="menu"></button>
-        <nav class="navigation">
-            <a href="index.html" class="active">Home</a>
-            <a href="project/index.html">Chamber</a>
-            <a href="https://github.com/zinum-dev">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/andre-zinum">LinkedIn</a>
-        </nav>
     </header>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+    </nav>
     <main>
-        <section>
-            <h2>Course Work</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Brazil</h2>
-
-        </section>
-        <section id="certificate">
-            <h2>Web and Computer Programming Certificate</h2>
+        <section id="members ">
+            <h2>Chamber Members</h2>
             <div class="couses-filters">
-                <button id="all">ALL</button>
-                <button id="cse">CSE</button>
-                <button id="wdd">WDD</button>
+                <button id="all">Grid <i class="fas fa-list"></i></button>
+                <button id="cse">List <i class="fas fa-th"></i></button>
             </div>
-            <p class="credits"></p>
-            <div class="courses"></div>
+            <div class="members"></div>
         </section>
     </main>
     <footer>
-        <p>©️<span id="currentyear"></span> 💻 André Figueiredo Muniz 💻 Brazil</p>
-        <p id="lastModified"></p>
+        <div class="contact-footer">
+            <p><strong>St. George Chamber of Commerce</strong></p>
+            <p>494 900 S St</p>
+            <p>St. George, UT 84790</p>
+            <p>info@stgeorgecc.org</p>
+            <p>(435) 6733533</p>
+        </div>
+        <nav class="sociallinks">
+            <a href="http://youtube.com" target="_blank">
+                <img src="images/youtube.svg" alt="Youtube">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/x-twitter.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.linkedIn.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </nav>
+        <div class="development-footer">
+            <p>WDD231 Class Project</p>
+            <p>André Muniz</p>
+            <p>©️<span id="currentyear"></span>St. George Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 
 </body>
