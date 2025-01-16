@@ -36,7 +36,7 @@ const displayMembers = (members) => {
         let phoneNumber = document.createElement('p');
 
         fullName.textContent = `${member.name}`;
-        portrait.setAttribute('src', `/chamber/images/${member.imageFileName}`);
+        portrait.setAttribute('src', `images/${member.imageFileName}`);
         portrait.setAttribute('alt', `Image of ${member.name}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', 340);
