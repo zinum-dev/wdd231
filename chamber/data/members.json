@@ -1,0 +1,72 @@
+[
+    {
+        "name": "La Botana",
+        "address": "916 E St George Blvd, St. George, UT 84770",
+        "phoneNumber": "+14356744101",
+        "websiteURL": "https://themenustar7.com/webspace/menus.php?code=orderlabotana.com",
+        "imageFileName": "la-botana.png",
+        "membershipLevel": 3,
+        "cuisineType": "Mexican",
+        "type": "restaurant"
+    },
+    {
+        "name": "Chili's Grill & Bar",
+        "address": "311 Red Cliffs Dr, St. George, UT 84790",
+        "phoneNumber": "+14356287503",
+        "websiteURL": "https://www.chilis.com/locations/us/utah/st-george/st-george?utm_source=google&utm_medium=local&utm_campaign=Chilis",
+        "imageFileName": "chilis.png",
+        "membershipLevel": 2,
+        "cuisineType": "Tex-Mex",
+        "type": "restaurant"
+    },
+    {
+        "name": "Applebee's Grill + Bar",
+        "address": "156 S River Rd, St. George, UT 84790",
+        "phoneNumber": "+14356286600",
+        "websiteURL": "https://restaurants.applebees.com/en-us/ut/st-george/156-s.-river-road-95030?utm_source=google&utm_medium=organic&utm_campaign=google_my_business&utm_term=95030&utm_content=website",
+        "imageFileName": "applebees.png",
+        "membershipLevel": 1,
+        "cuisineType": "American",
+        "type": "restaurant"
+    },
+    {
+        "name": "First Watch",
+        "address": "1091 N Bluff St #313, St. George, UT 84770",
+        "phoneNumber": "+14356280368",
+        "websiteURL": "https://fw-menus.s3.us-east-1.amazonaws.com/June+2024+Core+Menus/FWR0324_June24Menu_ADA_8DP.pdf",
+        "imageFileName": "first-watch.png",
+        "membershipLevel": 3,
+        "cuisineType": "Breakfast",
+        "type": "restaurant"
+    },
+    {
+        "name": "La Cocina de Luzita",
+        "address": "1487 S Silicon Way, St. George, UT 84770",
+        "phoneNumber": "+14352187292",
+        "websiteURL": "",
+        "imageFileName": "la-cocina-de-luzita.png",
+        "membershipLevel": 2,
+        "cuisineType": "El Salvadorian",
+        "type": "restaurant"
+    },
+    {
+        "name": "Las Palmas Authentic Mexican Food",
+        "address": "1572 S Convention Center Dr, St. George, UT 84790",
+        "phoneNumber": "+14359220753",
+        "websiteURL": "http://laspalmasutah.com/",
+        "imageFileName": "las-palmas.png",
+        "membershipLevel": 1,
+        "cuisineType": "Mexican",
+        "type": "restaurant"
+    },
+    {
+        "name": "Chef Alfredo’s St George",
+        "address": "1110 S Bluff St, St. George, UT 84770",
+        "phoneNumber": "+14356565000",
+        "websiteURL": "http://chefalfredos.com/",
+        "imageFileName": "chef-alfredo.png",
+        "membershipLevel": 1,
+        "cuisineType": "Italian",
+        "type": "restaurant"
+    }
+]

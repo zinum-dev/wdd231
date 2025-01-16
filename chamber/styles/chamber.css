@@ -93,6 +93,11 @@ body {
     line-height: 1.6;
 }
 
+main {
+    margin: auto;
+    max-width: 800px;
+}
+
 .under-construction {
     text-align: center;
 }

@@ -10,15 +10,25 @@
     --radius: 10px
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-body {
-    font-family: var(--paragraph-font);
-    background-color: var(--background);
-    color: var(--text);
-    line-height: 1.6;
+.couses-filters button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: var(--radius);
+    background-color: var(--primary);
 }
+
+.grid{
+    background-color: green;
+}
+
+.list{
+    background-color: pink;
+}
+
