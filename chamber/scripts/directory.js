@@ -53,7 +53,9 @@ const displayMembers = (members) => {
         card.appendChild(portrait);
         card.appendChild(address);
         card.appendChild(phoneNumber);
-        card.appendChild(link);
+        if (member.websiteURL != '') {
+            card.appendChild(link);
+        }
 
         display.appendChild(card);
     });
