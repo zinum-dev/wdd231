@@ -14,7 +14,7 @@ listbutton.addEventListener("click", () => {
 });
 
 
-const url = '/chamber/data/members.json';
+const url = 'https://zinum-dev.github.io/wdd231/chamber/data/members.json';
 getMembersData(url)
 
 async function getMembersData(url) {
