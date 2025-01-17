@@ -37,6 +37,8 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', `images/${member.imageFileName}`);
         portrait.setAttribute('alt', `Image of ${member.name}`);
         portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '150');
+        portrait.setAttribute('heigth', '150');
 
         phoneNumber.textContent = `${member.phoneNumber}`;
         address.textContent = `${member.address}`;
