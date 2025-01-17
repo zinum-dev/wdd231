@@ -21,8 +21,6 @@ async function getMembersData(url) {
 
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data)
-    console.table(data)
     displayMembers(data)
 }
 
@@ -39,8 +37,6 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', `images/${member.imageFileName}`);
         portrait.setAttribute('alt', `Image of ${member.name}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', 340);
-        portrait.setAttribute('height', 440);
 
         phoneNumber.textContent = `${member.phoneNumber}`;
         address.textContent = `${member.address}`;
