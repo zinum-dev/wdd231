@@ -4,7 +4,7 @@
         "address": "916 E St George Blvd, St. George, UT 84770",
         "phoneNumber": "+14356744101",
         "websiteURL": "https://themenustar7.com/webspace/menus.php?code=orderlabotana.com",
-        "imageFileName": "la-botana.png",
+        "imageFileName": "la-botana.webp",
         "membershipLevel": 3,
         "cuisineType": "Mexican",
         "type": "restaurant"
@@ -14,7 +14,7 @@
         "address": "311 Red Cliffs Dr, St. George, UT 84790",
         "phoneNumber": "+14356287503",
         "websiteURL": "https://www.chilis.com/locations/us/utah/st-george/st-george?utm_source=google&utm_medium=local&utm_campaign=Chilis",
-        "imageFileName": "chilis.png",
+        "imageFileName": "chilis.webp",
         "membershipLevel": 2,
         "cuisineType": "Tex-Mex",
         "type": "restaurant"
@@ -34,7 +34,7 @@
         "address": "1091 N Bluff St #313, St. George, UT 84770",
         "phoneNumber": "+14356280368",
         "websiteURL": "https://fw-menus.s3.us-east-1.amazonaws.com/June+2024+Core+Menus/FWR0324_June24Menu_ADA_8DP.pdf",
-        "imageFileName": "first-watch.png",
+        "imageFileName": "first-watch.webp",
         "membershipLevel": 3,
         "cuisineType": "Breakfast",
         "type": "restaurant"
@@ -44,7 +44,7 @@
         "address": "1487 S Silicon Way, St. George, UT 84770",
         "phoneNumber": "+14352187292",
         "websiteURL": "",
-        "imageFileName": "la-cocina-de-luzita.png",
+        "imageFileName": "la-cocina-de-luzita.webp",
         "membershipLevel": 2,
         "cuisineType": "El Salvadorian",
         "type": "restaurant"
@@ -54,7 +54,7 @@
         "address": "1572 S Convention Center Dr, St. George, UT 84790",
         "phoneNumber": "+14359220753",
         "websiteURL": "http://laspalmasutah.com/",
-        "imageFileName": "las-palmas.png",
+        "imageFileName": "las-palmas.webp",
         "membershipLevel": 1,
         "cuisineType": "Mexican",
         "type": "restaurant"
@@ -64,7 +64,7 @@
         "address": "1110 S Bluff St, St. George, UT 84770",
         "phoneNumber": "+14356565000",
         "websiteURL": "http://chefalfredos.com/",
-        "imageFileName": "chef-alfredo.png",
+        "imageFileName": "chef-alfredo.webp",
         "membershipLevel": 1,
         "cuisineType": "Italian",
         "type": "restaurant"
