@@ -62,13 +62,13 @@ section {
     background-color: var(--primary-transparency);
 }
 
-.list h2{
+.list h2 {
     font-size: 1rem;
 }
 
 section p {
-	font-size: smaller;
-    padding: 0 1rem ;
+    font-size: smaller;
+    padding: 0 1rem;
 }
 
 

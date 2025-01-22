@@ -1,0 +1,18 @@
+@media (min-width: 780px) {
+    main {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    section {
+        margin: 0 0 15px;
+    }
+
+
+    .hero {
+        grid-column: 1 / 4;
+    }
+
+    #company-spotlights {
+        grid-column: 1 / 4;
+    }
+}
