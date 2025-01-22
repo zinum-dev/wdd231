@@ -29,7 +29,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/index.js" defer type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -37,12 +37,12 @@
 <body>
     <header>
         <img src="images/tiny-logo.webp" alt="Company logo picture" width="34" height="40">
-        <span>
+        <div>
             <h1>
                 St. George
             </h1>
             Chamber of Commerce
-        </span>
+        </div>
         <button type="button" id="menu"></button>
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
@@ -68,8 +68,9 @@
             <h1>Weather Forecast</h1>
             <div id="weather-forecast"></div>
         </section>
-        <section id="company-spotlights" class="grid">
-        </section>
+        <div id="company-spotlights" class="grid">
+
+        </div>
     </main>
     <footer>
         <div class="contact-footer">

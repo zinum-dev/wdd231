@@ -7,7 +7,13 @@ export async function getMembersData(url) {
     return data;
 }
 
-export const createMembersCard = (members, display, size = 100) => {
+export const createMembersCard = (members, display, size = 100, special = false) => {
+    if (special) {
+        members = members.filter((member) => {
+            return member.membershipLevel == 1 || member.membershipLevel == 2
+        }).sort(() => Math.random() - 0.5);
+    }
+
     for (let index = 0; index < members.length && index < size; index++) {
         const member = members[index];
         let card = document.createElement('section');

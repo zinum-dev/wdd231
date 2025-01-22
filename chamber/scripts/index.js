@@ -14,7 +14,7 @@ display5dayWeather();
 
 async function displayMembers(url) {
     const data = await getMembersData(url);
-    createMembersCard(data, display, 3);
+    createMembersCard(data, display, 3, true);
 }
 
 async function displayWeather() {
@@ -94,7 +94,6 @@ async function display5dayWeather() {
         const date = new Date(forecast.dt * 1000);
         const today = new Date();
         const title = today.getDay() == date.getDay() ? 'Today' : date.toLocaleDateString('en-US', { weekday: 'long' });
-        console.log(title);
         let temp = document.createElement('p');
         temp.innerHTML = `${title}: <strong>${forecast.main.temp_max}° C</strong>`;
         weatherForecast.appendChild(temp)

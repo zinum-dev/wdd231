@@ -1,15 +1,15 @@
 let year = new Date().getFullYear();
 let oLastModif = new Date(document.lastModified);
 oLastModif = Intl.DateTimeFormat("en-US", {
-  dateStyle: "full",
+    dateStyle: "full",
 }).format(oLastModif);
 
 
 document.getElementById(
-  "currentyear"
+    "currentyear"
 ).textContent = `${year}`;
 document.getElementById(
-  "lastModified"
+    "lastModified"
 ).textContent = `Last Modification: ${oLastModif}`;
 
 
@@ -17,8 +17,8 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
 });
 
 const courses = [
@@ -32,7 +32,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: true 
+        completed: true
     },
     {
         subject: 'WDD',
@@ -45,7 +45,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: true 
+        completed: true
     },
     {
         subject: 'CSE',
@@ -57,7 +57,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: true 
+        completed: true
     },
     {
         subject: 'CSE',
@@ -105,23 +105,23 @@ createCourseCard(courses);
 
 
 
-function createCourseCard(filteredCourses){
+function createCourseCard(filteredCourses) {
     document.querySelector(".courses").innerHTML = ""
     filteredCourses.forEach(course => {
         let courseCard = document.createElement('div')
-        courseCard.textContent =   `${course.subject} ${course.number}`
+        courseCard.textContent = `${course.subject} ${course.number}`
         courseCard.classList.add('course-card');
-        if(course.completed){
+        if (course.completed) {
             courseCard.classList.add('course-completed');
         }
         document.querySelector(".courses").appendChild(courseCard)
-        
+
     })
     const totalCredits = filteredCourses.reduce((sum, course) => {
         return sum + course.credits
     }, 0);
     document.querySelector(".credits").textContent = `Total Credits: ${totalCredits}`;
-  
+
 }
 
 const allLink = document.querySelector('#all')
