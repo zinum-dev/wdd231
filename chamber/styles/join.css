@@ -16,7 +16,7 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin: 0 10px 15px;
+    margin: 20px 10px 15px;
 }
 
 form label {
@@ -77,8 +77,26 @@ form select {
 }
 
 section {
-    margin: 0 10px;
+    margin: 20px 10px;
 }
+
+
+.membership-cards {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .card {
     background-color: var(--primary);
@@ -92,4 +110,35 @@ section {
     text-decoration: none;
     color: var(--text);
     cursor: pointer;
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 5rem var(--primary);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog h2 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    background-color: var(--secondary);
 }
