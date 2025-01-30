@@ -1,0 +1,9 @@
+@media (min-width: 780px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+}

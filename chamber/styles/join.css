@@ -1,0 +1,95 @@
+:root {
+    --primary: #779BE7;
+    --primary-transparency: rgba(119, 155, 231, 0.8);
+    --secondary: #CE7B91;
+    --background: #FCFFFC;
+    --text: #020122;
+
+    --heading-font: Roboto, Sans-serif;
+    --paragraph-font: Roboto Mono, monospace;
+
+    --radius: 10px
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0 10px 15px;
+}
+
+form label {
+    display: block;
+    padding-top: 1rem;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    display: block;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 400px;
+}
+
+form textarea {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    border-radius: var(--radius);
+    max-width: 400px;
+}
+
+form textarea {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    border-radius: var(--radius);
+    max-width: 400px;
+}
+
+form input[type="submit"] {
+    width: 96%;
+    max-width: 400px;
+    padding: .75rem;
+    border-radius: var(--radius);
+    margin: 2rem 0%;
+    background-color: var(--accent);
+    font-weight: 500;
+    font-family: var(--heading-font)
+}
+
+form select {
+    display: block;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 400px;
+}
+
+.required {
+    color: red !important;
+}
+
+section {
+    margin: 0 10px;
+}
+
+.card {
+    background-color: var(--primary);
+    border-radius: var(--radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.modal-link {
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+}

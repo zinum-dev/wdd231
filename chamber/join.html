@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +29,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
 
     <link rel="icon" href="images/favicon.ico">
@@ -49,9 +53,81 @@
         </nav>
     </header>
     <main>
-        <section class="under-construction">
-            <h1>Under Construction</h1>
-            <img src="images/under-construction.webp" alt="under construction">
+        <form action="thankyou.html" method="get">
+            <h2>Membership Application</h2>
+            <label>First Name<span class="required">*</span><input type="text" name="fname" id="fname" required
+                    autocomplete="given-name"></label>
+            <label>Last Name<span class="required">*</span><input type="text" name="lname" id="lname" required
+                    autocomplete="family-name"></label>
+            <label>Organizational Title<input type="text" name="orgtitle" id="orgtitle"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                    title="Only alpha characters, hyphens, and spaces are allowed, with a minimum of seven characters."></label>
+            <label>Email Address<span class="required">*</span><input type="email" name="email" id="email" required
+                    autocomplete="email" placeholder="example@example.com"></label>
+            <label>Mobile Phone Number<span class="required">*</span><input type="tel" name="phone" id="phone" required
+                    autocomplete="tel"></label>
+            <label>Business/Organization Name<span class="required">*</span><input type="text" name="business"
+                    id="business" required autocomplete="organization"></label>
+            <label>Membership Level<span class="required">*</span>
+                <select name="membership" id="membership" required>
+                    <option value="np">NP Membership (No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>Business/Organization Description<textarea name="description" id="description"
+                    title="Business/Organization Description"></textarea></label>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Join Today">
+        </form>
+        <section>
+            <h2>Membership Levels</h2>
+            <div class="membership-cards">
+                <div id="np" class="card">
+                    <h3>Non Profit Membership Level</h3>
+                    <a href="#np-modal" class="modal-link">Learn More</a>
+                </div>
+                <dialog id="np-modal">
+                    <h2>Non Profit Membership Level</h2>
+                    <p>Access to special events, basic training sessions.</p>
+                    <button type="button" class="closeModal">Close</button>
+                </dialog>
+
+                <div id="bronze" class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <a href="#bronze-modal" class="modal-link">Learn More</a>
+                </div>
+                <dialog id="bronze-modal">
+                    <h2>Bronze Membership Level</h2>
+                    <p>All NP benefits plus advertising opportunities, event discounts.</p>
+                    <button type="button" class="closeModal">Close</button>
+                </dialog>
+
+                <div id="silver" class="card">
+                    <h3>Silver Membership Level</h3>
+                    <a href="#silver-modal" class="modal-link">Learn More</a>
+                </div>
+                <dialog id="silver-modal">
+                    <h2>Silver Membership Level</h2>
+                    <p>All Bronze benefits plus premium training sessions, spotlight positions on the home page.</p>
+                    <button type="button" class="closeModal">Close</button>
+                </dialog>
+
+                <div id="gold" class="card">
+                    <h3>Gold Membership Level</h3>
+                    <a href="#gold-modal" class="modal-link">Learn More</a>
+                </div>
+                <dialog id="gold-modal">
+                    <h2>Gold Membership Level</h2>
+                    <p>All Silver benefits plus exclusive events, higher advertising priority, additional discounts.</p>
+                    <button type="button" class="closeModal">Close</button>
+                </dialog>
+            </div>
+
+
+
+
         </section>
     </main>
     <footer>
