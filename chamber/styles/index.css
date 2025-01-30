@@ -65,6 +65,16 @@ section h1 {
     text-align: center;
 }
 
+#company-spotlights a {
+    display: block;
+    padding: 1rem;
+    background-color: var(--primary-transparency);
+    border-radius: var(--radius);
+    margin: 10px 10px;
+    text-decoration: none;
+    color: var(--text);
+}
+
 .grid {
     display: grid;
     gap: 10px;
