@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory</title>
-    <meta name="description" content="a page to show ">
+    <title>Join Today</title>
+    <meta name="description" content="a page to show a join form for a chamber of commerce">
     <meta name="author" content="André Muniz">
 
-    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:title" content="Chamber Join Page">
     <meta property="og:type" content="website">
     <meta property="og:description" content="A chamber of commerce from Saint George city">
     <meta property="og:url" content="https://zinum-dev.github.io/wdd231/chamber/directory.html">
@@ -55,8 +55,8 @@
     <main>
         <form action="thankyou.html" method="get">
             <h2>Membership Application</h2>
-            <label>First Name<span class="required">*</span><input type="text" name="fname" id="fname" required
-                    autocomplete="given-name"></label>
+            <label>First Name<strong><span class="required">*</span></strong><input type="text" name="fname" id="fname"
+                    required autocomplete="given-name"></label>
             <label>Last Name<span class="required">*</span><input type="text" name="lname" id="lname" required
                     autocomplete="family-name"></label>
             <label>Organizational Title<input type="text" name="orgtitle" id="orgtitle"
@@ -70,6 +70,7 @@
                     id="business" required autocomplete="organization"></label>
             <label>Membership Level<span class="required">*</span>
                 <select name="membership" id="membership" required>
+                    <option value="" disabled selected>Select a Membership level</option>
                     <option value="np">NP Membership (No Fee)</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
