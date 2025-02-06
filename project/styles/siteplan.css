@@ -1,0 +1,62 @@
+:root {
+    --primary: #23acfd;
+    --accent: #dd0329;
+    --secondary: #1775ae;
+    --background: #FFF;
+    --typeface: #333;
+
+    --radius: 10px
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    margin: auto ;
+    max-width: 800px;
+    background-color: var(--background);
+}
+
+body {
+    font-family: Roboto Mono, monospace;
+    background-color: var(--accent);
+    color: var(--typeface);
+    line-height: 1.6;
+
+}
+
+#background-color {
+    background-color: #FFF;
+}
+
+#primary-color {
+    background-color: #23acfd;
+}
+
+#secondary-color {
+    background-color: #1775ae;
+}
+
+#accent-color {
+    background-color: #dd0329;
+}
+
+#text-color {
+    background-color: #333;
+}
+
+#text-color span {
+    color: #FFF;
+}
+
+ul {
+    border: 1px solid #333;
+    padding: 5px 5px 5px 40px;
+}
