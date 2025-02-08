@@ -1,0 +1,24 @@
+@media (min-width: 1025px) {
+
+    #discover {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .place-card {
+        flex: 1 1 calc(50% - 10px);
+        margin: 5px;
+    }
+
+    .place-card:nth-child(odd):last-child {
+        flex: 1 1 100%;
+    }
+
+    .place-card img {
+        width: 250px;
+    }
+
+    main {
+        max-width: 1000px;
+    }
+}

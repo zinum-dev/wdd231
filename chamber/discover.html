@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory</title>
-    <meta name="description" content="a page to show ">
+    <title>Discover</title>
+    <meta name="description" content="A page to find what to do">
     <meta name="author" content="André Muniz">
 
     <meta property="og:title" content="Chamber Directory">
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +29,7 @@
         rel="stylesheet">
 
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -48,9 +52,10 @@
         </nav>
     </header>
     <main>
-        <section class="under-construction">
-            <h1>Under Construction</h1>
-            <img src="images/under-construction.webp" alt="under construction">
+        <section>
+            <h2>Discover</h2>
+            <div id="visit-message"></div>
+            <div id="discover"></div>
         </section>
     </main>
     <footer>
