@@ -27,8 +27,10 @@ header img {
     margin-left: 5px;
 }
 
-header h1 {
-    margin: 0;
+header span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
 }
 
 #menu {
