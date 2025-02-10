@@ -12,6 +12,7 @@ header {
     background-color: var(--primary);
     text-align: center;
 }
+
 h1 {
     margin: 0;
     padding: 10px;
@@ -19,7 +20,7 @@ h1 {
 
 main {
     padding: 20px;
-    margin: auto ;
+    margin: auto;
     max-width: 800px;
     background-color: var(--background);
 }
@@ -29,8 +30,12 @@ body {
     background-color: var(--accent);
     color: var(--typeface);
     line-height: 1.6;
-
 }
+
+img {
+    max-width: 100%;
+}
+
 
 #background-color {
     background-color: #FFF;
