@@ -99,7 +99,7 @@ body {
 main {
     margin: auto;
     max-width: 800px;
-    background-color: cadetblue;
+
 }
 
 
@@ -189,7 +189,7 @@ footer nav {
 #featured {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    
+
     justify-items: center;
     margin: 1rem 0;
 }
