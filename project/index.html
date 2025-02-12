@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. George Chambr of Commerce</title>
+    <meta name="description" content="St. George Chambr of Commerce">
+    <meta name="author" content="André Muniz">
+
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A chamber of commerce from Saint George city">
+    <meta property="og:url" content="https://zinum-dev.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://zinum-dev.github.io/wdd231/chamber/images/facebook-card.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/pokedex.css">
+    <link rel="stylesheet" href="styles/pokedex-large.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/pokedex.js" type="module"></script>
+
+    <link rel="icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/pokedex.webp" alt="Company logo picture" width="35" height="35">
+        <span>Pokédex</span>
+        <button type="button" id="menu" aria-label="navigation links"></button>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="pokedex.html">Pokémon List</a>
+            <a href="join.html">Join Club</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Discover the World of Pokémon</h1>
+            <p>Your complete guide to all Pokémon species, their abilities, stats, and more.</p>
+            <img src="images/pokedex.gif" alt="Pokedex Blinking">
+        </div>
+        <section>
+            <h2>Featured Pokémon</h2>
+            <div id="featured"></div>
+        </section>
+    </main>
+    <footer>
+        <div id="about" class="footer-card">
+            <h4>About Pokédex</h4>
+            <p>Your complete guide to the world of Pokémon</p>
+        </div>
+        <div class="footer-card">
+
+            <h4>Quick Links</h4>
+            <nav id="quickLinks">
+                <a href="index.html">Home</a>
+                <a href="pokedex.html">Pokémon List</a>
+                <a href="join.html">Join Club</a>
+            </nav>
+        </div>
+        <div class="footer-card">
+
+            <h4>Connect</h4>
+            <nav id="sociallinks">
+                <a href="http://youtube.com" target="_blank">
+                    <img src="images/youtube.svg" alt="Youtube">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/x-twitter.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.linkedIn.com/" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </nav>
+        </div>
+
+
+        <div class="development-footer">
+            <p>WDD231 Class Project - André Muniz &copy;<span id="currentyear"></span> Pokédex. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
