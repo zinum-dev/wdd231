@@ -186,20 +186,28 @@ footer nav {
     color: var(--background);
 }
 
+#featured-h2 {
+    border-bottom: var(--secondary) solid 1px;
+    margin: 1rem;
+}
+
 #featured {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     justify-items: center;
-    margin: 1rem 0;
+    margin: 1rem;
+
 }
 
 .pokemon {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    border: var(--accent) solid 1px;
     border-radius: var(--radius);
+    padding: 0.5rem;
 }
 
 .pokemon-type {
@@ -207,4 +215,27 @@ footer nav {
     padding: 2px 5px;
     margin-inline: 2.5px;
     border-radius: 3px;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem;
+    border: var(--secondary) solid 1px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    padding-left: 0.5rem;
+}
+
+#home h1 {
+    text-align: start;
+    font-weight: bold;
+    margin: 0;
+    align-self: end;
+    padding-bottom: 0rem;
+}
+
+#home img {
+    display: none;
 }
