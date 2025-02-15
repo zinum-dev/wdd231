@@ -17,6 +17,7 @@ async function getPokemonData(pokemonId) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}/`);
     const data = await response.json();
     return {
+        id: data.id,
         name: data.name,
         image: data.sprites.front_default,
         types: data.types
@@ -34,8 +35,12 @@ export async function displayPokemon(pokemonArray, elementId) {
         const pokemonElement = document.createElement('div');
         pokemonElement.classList.add('pokemon');
 
+        const pokemonId = document.createElement('span');
+        pokemonId.textContent = pokemon.id + '.';
+
         const pokemonName = document.createElement('h2');
         pokemonName.textContent = pokemon.name;
+
 
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.image;
@@ -52,8 +57,15 @@ export async function displayPokemon(pokemonArray, elementId) {
 
             pokemonTypes.appendChild(typeSpan);
         });
+
+
+        const pokemonTitle = document.createElement('div');
+        pokemonTitle.appendChild(pokemonId);
+        pokemonTitle.appendChild(pokemonImage);
+        pokemonTitle.classList.add('pokemon-title');
+
         pokemonElement.appendChild(pokemonName);
-        pokemonElement.appendChild(pokemonImage);
+        pokemonElement.appendChild(pokemonTitle);
         pokemonElement.appendChild(pokemonTypes);
 
         element.appendChild(pokemonElement);
@@ -61,17 +73,22 @@ export async function displayPokemon(pokemonArray, elementId) {
 }
 
 export async function findPokemonByName(name) {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}/`);
-    if (!response.ok) {
-        throw new Error('Pokemon not found');
+    try {
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}/`);
+        if (!response.ok) {
+            throw new Error('Pokemon not found');
+        }
+        const data = await response.json();
+        return {
+            id: data.id,
+            name: data.name,
+            image: data.sprites.front_default,
+            types: data.types
+        };
+    } catch (error) {
+        console.error(error);
+        return null;
     }
-    const data = await response.json();
-    return {
-        id: data.id,
-        name: data.name,
-        image: data.sprites.front_default,
-        types: data.types
-    };
 }
 
 const types_color = [

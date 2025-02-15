@@ -197,6 +197,7 @@ footer nav {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
     margin: 1rem;
+    row-gap: 1rem;
 
 }
 
@@ -206,8 +207,18 @@ footer nav {
     align-items: center;
     border: var(--accent) solid 1px;
     border-radius: var(--radius);
-    padding: 0.5rem;
+    padding: 0.3em;
 }
+
+.pokemon-title {
+    display: flex;
+    align-items: center;
+}
+
+.pokemon-title span {
+    align-self: start;
+}
+
 
 .pokemon-type {
     color: #fff;
