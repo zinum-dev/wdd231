@@ -5,7 +5,6 @@ const formData = currentUrl.split('?')[1].split('&')
 const results = document.querySelector('#thanks');
 
 
-console.log(formData);
 results.innerHTML = `
 <p>Thank you, ${show("fname")} ${show("lname")}, for joining the St. George Chamber of Commerce!</p>
             <p>We have received your application with the following details:</p>

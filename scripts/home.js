@@ -132,7 +132,6 @@ const cseLink = document.querySelector('#cse')
 const wddLink = document.querySelector('#wdd')
 
 allLink.addEventListener("click", () => {
-    console.log("allLink");
     createCourseCard(courses);
 });
 
