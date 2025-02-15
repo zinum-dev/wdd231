@@ -19,7 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
         rel="stylesheet">
 
-    <script src="scripts/pokedex.js" type="module"></script>
+    <script src="scripts/join.js" type="module"></script>
 
     <link rel="icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
 </head>
@@ -38,15 +38,24 @@
     <main>
         <section id="join-club">
             <h2>Join Pokémon Club</h2>
-            <form action="thankyou.html" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="favorite-pokemon">Favorite Pokémon:</label>
-                <input type="text" id="favorite-pokemon" name="favorite-pokemon" required>
-                <button type="submit">Join</button>
+            <form id="join-form">
+                <label for="name">Name:<span class="required">*</span>
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">Email:<span class="required">*</span>
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="favorite-pokemon">Favorite Pokémon:<span class="required">*</span>
+                    <input type="text" id="favorite-pokemon" name="favorite-pokemon" required>
+                </label>
+                <input id="join-input" type="submit" value="Join Today">
             </form>
+
+            <dialog id="thanks-modal">
+                <h2>Thank You for Join</h2>
+                <p>We will be in touch soon.</p>
+                <button type="button" class="closeModal">Close</button>
+            </dialog>
         </section>
     </main>
     <footer>

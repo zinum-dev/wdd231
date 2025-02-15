@@ -21,6 +21,7 @@
 
     <script src="scripts/pokedex.js" type="module"></script>
 
+
     <link rel="icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
 </head>
 
@@ -38,7 +39,7 @@
     <main>
         <section id="search-pokemon">
             <h2>Search Pokémon</h2>
-            <form id="search-form">
+            <form id="search-form" method="get">
                 <input type="text" id="search-input" placeholder="Enter Pokémon name">
                 <button type="submit">Search</button>
             </form>
@@ -47,8 +48,11 @@
             </div>
         </section>
         <section id="browse-pokemon">
-            <h2>Browse Pokémon</h2>
-            <div class="pokemon-list">
+            <h2>Browse Pokémon <button id="reset-pokedex" aria-label="reset pokedex">
+                    <img src="images/reset-icon.svg" alt="reset icon" width="30" height="25">
+                </button></h2>
+
+            <div id="pokemon-list" class="pokemon-list">
                 <!-- Pokémon list items will be dynamically generated here -->
             </div>
         </section>

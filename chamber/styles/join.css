@@ -45,14 +45,6 @@ form textarea {
     max-width: 400px;
 }
 
-form textarea {
-    display: block;
-    padding: .5rem;
-    width: 100%;
-    border-radius: var(--radius);
-    max-width: 400px;
-}
-
 form input[type="submit"] {
     width: 96%;
     max-width: 400px;

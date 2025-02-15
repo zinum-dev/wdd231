@@ -46,4 +46,9 @@
         grid-template-columns: repeat(5, auto);
         width: 100%;
     }
+
+    .pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
