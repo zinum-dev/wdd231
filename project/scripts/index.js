@@ -15,7 +15,7 @@ document.getElementById(
 ).textContent = `${year}`;
 
 
-setInterval(displayPokemon(getRandomNumbers(5), 'featured'), 5000);
+setInterval(() => displayPokemon(getRandomNumbers(5), 'featured'), 5000);
 
 
 
