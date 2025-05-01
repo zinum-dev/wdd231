@@ -75,7 +75,7 @@ section {
 
 
 .membership-cards {
-    animation: fadeInUp 1s ease-out;
+    animation: fadeInUp 1s ease-out ;
 }
 
 @keyframes fadeInUp {
